@@ -1,0 +1,19 @@
+::-webkit-scrollbar {
+    @apply bg-zinc-900 w-1 h-1;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    @apply bg-zinc-300 rounded-lg;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+    @apply bg-zinc-300 rounded-lg;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-zinc-800 text-white;
+}
