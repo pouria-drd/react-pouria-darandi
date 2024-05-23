@@ -3,7 +3,7 @@ interface PageLayoutProps {
 }
 
 const PageLayout = ({ children }: PageLayoutProps) => {
-    return <section>{children}</section>;
+    return <section className="p-4 w-full">{children}</section>;
 };
 
 export default PageLayout;

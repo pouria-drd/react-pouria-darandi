@@ -3,7 +3,7 @@ interface AppLayoutProps {
 }
 
 const AppLayout = ({ children }: AppLayoutProps) => {
-    return <main className="flex flex-col h-svh">{children}</main>;
+    return <main className="flex flex-col">{children}</main>;
 };
 
 export default AppLayout;
