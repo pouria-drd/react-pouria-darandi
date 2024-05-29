@@ -1,24 +1,36 @@
 ::-webkit-scrollbar {
-    @apply bg-zinc-900 w-1 h-1;
+    @apply bg-pd-scroll-bg w-2 h-1;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-    @apply bg-zinc-300 rounded-lg;
+    @apply bg-pd-scroll rounded-none;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-    @apply bg-zinc-300 rounded-lg;
+    @apply bg-pd-scroll rounded-none;
 }
 
-* {
+html {
     scroll-behavior: smooth;
 }
 
 body {
-    @apply bg-zinc-800 text-white;
+    @apply bg-zinc-800 text-pd-primary-text;
 }
 
 .glass {
     backdrop-filter: blur(20px) saturate(150%);
     -webkit-backdrop-filter: blur(20px) saturate(150%);
+}
+
+.sidebar {
+    top: 0;
+    right: 0;
+    width: 75%;
+    height: 100%;
+    position: fixed;
+    padding: 4.5rem 0 0 3rem;
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    background-color: hsla(0, 0%, 10%, 0.3);
 }
