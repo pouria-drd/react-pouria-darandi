@@ -11,7 +11,7 @@ const Navbar = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScroll(window.scrollY >= 50);
+            setScroll(window.scrollY >= 75);
         });
     }, []);
     // ${scroll ? "fixed h-[12svh]" : "h-[10svh]"}
@@ -19,16 +19,16 @@ const Navbar = () => {
     return (
         <>
             <header
-                className={`fixed bg-pd-primary-bg z-40 top-0 left-0 w-full ${
-                    scroll && "glass bg-opacity-80"
-                } px-4 sm:px-8 md:px-12 lg:px-16`}>
-                <nav className="flex items-center justify-between h-[10svh]">
+                className={`bg-pd-primary-bg w-full h-[10svh] ${
+                    scroll && "fixed glass bg-opacity-80 z-40 top-0 left-0 "
+                } app-px`}>
+                <nav className="flex items-center justify-between h-full">
                     <Link to="/" className="text-2xl">
                         Pouria <span className="text-pd-primary">DRD</span>
                     </Link>
 
                     <div className="hidden md:block">
-                        <NavLinks className="items-center justify-center" />
+                        <NavLinks className="items-center justify-center gap-10" />
                     </div>
 
                     <button

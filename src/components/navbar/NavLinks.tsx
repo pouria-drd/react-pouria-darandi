@@ -6,7 +6,7 @@ interface NavLinksProps {
 
 const NavLinks = (navLinksProps: NavLinksProps) => {
     return (
-        <ul className={` flex gap-4 ${navLinksProps.className}`}>
+        <ul className={`flex ${navLinksProps.className}`}>
             <Link className="hover:text-pd-primary" to="">
                 Home
             </Link>

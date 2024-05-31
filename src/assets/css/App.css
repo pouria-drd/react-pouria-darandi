@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    @apply bg-zinc-800 text-pd-primary-text;
+    @apply bg-red-500 text-pd-primary-text;
 }
 
 .glass {
@@ -33,4 +33,43 @@ body {
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     background-color: hsla(0, 0%, 10%, 0.3);
+}
+
+.my-btn {
+    @apply bg-pd-primary text-pd-primary-text transition-all rounded-lg px-4 py-2;
+}
+
+.app-px {
+    @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-40;
+}
+
+.pouria-hex-icon {
+    animation: floatImage 4s ease-in-out infinite;
+    @apply text-pd-primary drop-shadow-pdIcon hover:drop-shadow-pdIconHover transition-all;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-1.4rem);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out 1 forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
