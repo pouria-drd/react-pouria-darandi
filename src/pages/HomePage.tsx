@@ -3,8 +3,8 @@ import PouriaHexagonIcon from "../components/icons/PouriaHexagonIcon";
 
 function HomePage() {
     return (
-        <section className="bg-pd-primary-bg app-px pb-14 w-full">
-            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-2">
+        <section className="bg-pd-primary-bg app-px pb-14 w-full min-h-svh">
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 w-full">
                 <div className="flex flex-col items-start gap-4 mt-20 md:mt-32 h-fit">
                     <div>
                         <h3 className="text-2xl mb-1">
