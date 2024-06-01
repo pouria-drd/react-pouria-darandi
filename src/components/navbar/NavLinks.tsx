@@ -1,5 +1,3 @@
-import { Link } from "react-router-dom";
-
 interface NavLinksProps {
     className?: string;
 }
@@ -7,21 +5,21 @@ interface NavLinksProps {
 const NavLinks = (navLinksProps: NavLinksProps) => {
     return (
         <ul className={`flex ${navLinksProps.className}`}>
-            <Link className="hover:text-pd-primary-text" to="">
+            <a className="hover:text-pd-primary-text" href="#home">
                 Home
-            </Link>
-            <Link className="hover:text-pd-primary-text" to="#about">
+            </a>
+            <a className="hover:text-pd-primary-text" href="#about">
                 About
-            </Link>
-            <Link className="hover:text-pd-primary-text" to="#services">
+            </a>
+            <a className="hover:text-pd-primary-text" href="#services">
                 Services
-            </Link>
-            <Link className="hover:text-pd-primary-text" to="#projects">
+            </a>
+            <a className="hover:text-pd-primary-text" href="#projects">
                 Projects
-            </Link>
-            <Link className="hover:text-pd-primary-text" to="#contact">
+            </a>
+            <a className="hover:text-pd-primary-text" href="#contact">
                 Contact
-            </Link>
+            </a>
         </ul>
     );
 };
