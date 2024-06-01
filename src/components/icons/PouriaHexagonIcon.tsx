@@ -3,9 +3,9 @@ import pouria from "../../assets/images/trs-pouria2.png";
 const PouriaHexagonIcon = () => {
     return (
         <svg
-            className="max-w-full sm:max-w-[475px] md:min-w-[400px] pouria-hex-icon"
-            width={475}
-            height={475}
+            className="max-w-[475px] md:min-w-[400px] pouria-hex-icon"
+            width={500}
+            height={500}
             fill="currentcolor"
             viewBox="0 0 550 591"
             xmlns="http://www.w3.org/2000/svg">

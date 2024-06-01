@@ -24,7 +24,11 @@ body {
 }
 
 .my-btn {
-    @apply bg-pd-primary text-pd-primary-text transition-all rounded-lg px-4 py-2;
+    @apply bg-pd-primary text-pd-primary-text 
+    cursor-pointer transition-all rounded-lg
+    shadow-2xl shadow-pd-primary/25
+    hover:shadow-2xl hover:shadow-pd-primary/50
+    px-4 py-2 min-w-20;
 }
 
 .app-px {

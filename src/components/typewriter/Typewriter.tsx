@@ -22,7 +22,11 @@ const Typewriter = (typewriterProps: TypewriterProps) => {
         };
     }, []);
 
-    return <span ref={el} />;
+    return (
+        <div className="text-2xl w-full">
+            <span ref={el} />
+        </div>
+    );
 };
 
 export default Typewriter;

@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 
 import Sidebar from "./Sidebar";
-import MenuIcon from "./icons/MenuIcon";
 import NavLinks from "./NavLinks";
+import MenuIcon from "./icons/MenuIcon";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -27,7 +27,7 @@ const Navbar = () => {
                         Pouria <span className="text-pd-primary">DRD</span>
                     </Link>
 
-                    <div className="hidden md:block">
+                    <div className="hidden md:block text-pd-secondary-text">
                         <NavLinks className="items-center justify-center gap-10" />
                     </div>
 
