@@ -14,7 +14,7 @@ const HomeSection = () => {
     ];
 
     return (
-        <SectionLayout className="pb-32" id="home">
+        <SectionLayout className="pb-12" id="home">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-20 md:pt-14 w-full">
                 <div
                     className="text-center md:text-left
@@ -28,12 +28,14 @@ const HomeSection = () => {
 
                     <a className="my-btn my-4">Let's Talk</a>
 
-                    <SocialMedia />
+                    <div className="mt-4">
+                        <SocialMedia />
+                    </div>
                 </div>
 
                 <div
                     className="flex items-center justify-center
-                    w-full h-full pt-20">
+                    w-full h-full pt-4 md:pt-16">
                     <PouriaHexagonIcon />
                 </div>
             </div>
