@@ -14,8 +14,9 @@ const FloatLink = () => {
 
     return (
         <a
-            className="rounded-lg p-1 bg-pd-scroll-bg fixed right-4 bottom-4
-            w-fit text-pd-primary"
+            className="bg-pd-scroll-bg text-pd-primary fixed right-4 bottom-4
+            hover:scale-105
+            rounded-lg p-2 w-fit"
             href="/#home">
             <ChevronUpIcon />
         </a>

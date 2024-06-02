@@ -26,7 +26,9 @@ const HomeSection = () => {
 
                     <HomeDescription />
 
-                    <a className="my-btn my-4">Let's Talk</a>
+                    <a className="my-btn my-4" href="/#contact">
+                        Let's Talk
+                    </a>
 
                     <div className="mt-4">
                         <SocialMedia />
