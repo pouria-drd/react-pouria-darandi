@@ -32,7 +32,7 @@ const HomeSection = () => {
                 </div>
 
                 <div
-                    className="flex items-center justify-center 
+                    className="flex items-center justify-center
                     w-full h-full md:pt-20">
                     <PouriaHexagonIcon />
                 </div>

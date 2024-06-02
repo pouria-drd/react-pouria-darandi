@@ -3,11 +3,11 @@ import pouria from "../../assets/images/trs-pouria2.png";
 const PouriaHexagonIcon = () => {
     return (
         <svg
-            className="max-w-[475px] md:min-w-[400px] pouria-hex-icon"
+            className="max-w-[475px] md:min-w-[400px] pouria-hex-icon pt-1"
             width={500}
             height={500}
             fill="currentcolor"
-            viewBox="0 0 550 591"
+            viewBox="0 0 550 590"
             xmlns="http://www.w3.org/2000/svg">
             <mask id="maskBlob" mask-type="alpha">
                 <path
