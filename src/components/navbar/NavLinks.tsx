@@ -13,31 +13,31 @@ const NavLinks = (navLinksProps: NavLinksProps) => {
             <a
                 onClick={handleOnClick}
                 className="hover:text-pd-primary-text"
-                href="#home">
+                href="/#home">
                 Home
             </a>
             <a
                 onClick={handleOnClick}
                 className="hover:text-pd-primary-text"
-                href="#about">
+                href="/#about">
                 About
             </a>
             <a
                 onClick={handleOnClick}
                 className="hover:text-pd-primary-text"
-                href="#services">
+                href="/#services">
                 Services
             </a>
             <a
                 onClick={handleOnClick}
                 className="hover:text-pd-primary-text"
-                href="#projects">
+                href="/#projects">
                 Projects
             </a>
             <a
                 onClick={handleOnClick}
                 className="hover:text-pd-primary-text"
-                href="#contact">
+                href="/#contact">
                 Contact
             </a>
         </ul>

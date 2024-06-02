@@ -1,3 +1,5 @@
+import FloatLink from "../FloatLink";
+
 interface PageLayoutProps {
     className?: string;
     children?: React.ReactNode;
@@ -5,9 +7,13 @@ interface PageLayoutProps {
 
 const PageLayout = (pageLayoutProps: PageLayoutProps) => {
     return (
-        <main className={`${pageLayoutProps.className}`}>
-            {pageLayoutProps.children}
-        </main>
+        <>
+            <main className={`${pageLayoutProps.className}`}>
+                {pageLayoutProps.children}
+            </main>
+
+            <FloatLink />
+        </>
     );
 };
 

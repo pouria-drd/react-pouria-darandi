@@ -13,7 +13,9 @@ const AboutSection = () => {
                     className="
                     flex flex-col items-center md:items-start justify-start gap-4
                     w-full h-full">
-                    <h3 className="text-3xl text-pd-primary-text">About Me</h3>
+                    <h3 className="font-bold text-3xl text-pd-primary-text">
+                        About Me
+                    </h3>
                     <p className="text-pd-secondary-text text-center md:text-justify max-w-80 lg:max-w-96">
                         I'm React, Vue, Django and Unity developer, With 3 years
                         of experience in web and game development at ferait
