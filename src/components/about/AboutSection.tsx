@@ -1,10 +1,10 @@
+import SectionLayout from "../layouts/SectionLayout";
+
 const AboutSection = () => {
     return (
-        <section
-            className="bg-pd-secondary-bg app-px w-full min-h-svh"
-            id="about">
-            AboutSection
-        </section>
+        <SectionLayout className="pt-28" id="about">
+            About
+        </SectionLayout>
     );
 };
 

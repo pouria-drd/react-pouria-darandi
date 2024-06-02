@@ -2,6 +2,7 @@ import HomeHeader from "./HomeHeader";
 import SocialMedia from "../SocialMedia";
 import HomeDescription from "./HomeDescription";
 import Typewriter from "../typewriter/Typewriter";
+import SectionLayout from "../layouts/SectionLayout";
 import PouriaHexagonIcon from "../icons/PouriaHexagonIcon";
 
 const HomeSection = () => {
@@ -13,7 +14,7 @@ const HomeSection = () => {
     ];
 
     return (
-        <section className="bg-pd-primary-bg app-px w-full pb-12" id="home">
+        <SectionLayout id="home">
             <div className="grid grid-cols-1 md:grid-cols-2 md:gap-20 w-full">
                 <div
                     className="text-center md:text-left
@@ -36,7 +37,7 @@ const HomeSection = () => {
                     <PouriaHexagonIcon />
                 </div>
             </div>
-        </section>
+        </SectionLayout>
     );
 };
 

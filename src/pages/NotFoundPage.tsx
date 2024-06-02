@@ -17,8 +17,8 @@ function NotFoundPage() {
                     404
                 </h1>
 
-                <div className="flex flex-col items-center justify-center gap-2">
-                    <h3 className="text-xl">NotFoundPage</h3>
+                <div className="flex flex-col items-center justify-center gap-1">
+                    <h3 className="text-xl">Not Found</h3>
 
                     <Link to="/" className="text-pd-primary">
                         Back to Home
