@@ -3,7 +3,7 @@ import pouria from "../../assets/images/trs-pouria2.png";
 const PouriaHexagonIcon = () => {
     return (
         <svg
-            className="max-w-[475px] md:min-w-[400px] pouria-hex-icon pt-1"
+            className="max-w-[475px] md:min-w-[375px] pouria-hex-icon pt-1"
             width={500}
             height={500}
             fill="currentcolor"

@@ -1,9 +1,10 @@
 import pouria from "../../assets/images/trs-pouria.png";
 
 const PouriaBorderHexIcon = () => {
+    //  absolute -left-[26px]
     return (
         <svg
-            className="w-full md:max-w-96 text-pd-primary"
+            className="w-[400px] text-pd-primary"
             fill="none"
             viewBox="0 0 550 592"
             xmlns="http://www.w3.org/2000/svg">
