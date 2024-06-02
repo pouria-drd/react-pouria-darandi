@@ -1,23 +1,43 @@
 interface NavLinksProps {
     className?: string;
+    onClick?: () => void;
 }
 
 const NavLinks = (navLinksProps: NavLinksProps) => {
+    const handleOnClick = () => {
+        navLinksProps.onClick?.();
+    };
+
     return (
         <ul className={`flex ${navLinksProps.className}`}>
-            <a className="hover:text-pd-primary-text" href="#home">
+            <a
+                onClick={handleOnClick}
+                className="hover:text-pd-primary-text"
+                href="#home">
                 Home
             </a>
-            <a className="hover:text-pd-primary-text" href="#about">
+            <a
+                onClick={handleOnClick}
+                className="hover:text-pd-primary-text"
+                href="#about">
                 About
             </a>
-            <a className="hover:text-pd-primary-text" href="#services">
+            <a
+                onClick={handleOnClick}
+                className="hover:text-pd-primary-text"
+                href="#services">
                 Services
             </a>
-            <a className="hover:text-pd-primary-text" href="#projects">
+            <a
+                onClick={handleOnClick}
+                className="hover:text-pd-primary-text"
+                href="#projects">
                 Projects
             </a>
-            <a className="hover:text-pd-primary-text" href="#contact">
+            <a
+                onClick={handleOnClick}
+                className="hover:text-pd-primary-text"
+                href="#contact">
                 Contact
             </a>
         </ul>

@@ -27,7 +27,10 @@ const Sidebar = (sidebarProps: SidebarProps) => {
                     Pouria <span className="text-pd-primary">DRD</span>
                 </h3>
 
-                <NavLinks className="flex-col gap-4" />
+                <NavLinks
+                    onClick={sidebarProps.onClose}
+                    className="flex-col gap-4"
+                />
 
                 <button
                     onClick={sidebarProps.onClose}
