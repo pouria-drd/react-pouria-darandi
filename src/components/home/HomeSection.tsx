@@ -14,7 +14,7 @@ const HomeSection = () => {
     ];
 
     return (
-        <SectionLayout className="pb-12" id="home">
+        <SectionLayout className="md:pb-8" id="home">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-20 md:pt-14 w-full">
                 <div
                     className="text-center md:text-left

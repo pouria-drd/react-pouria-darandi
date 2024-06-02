@@ -29,7 +29,7 @@ const Sidebar = (sidebarProps: SidebarProps) => {
 
                 <NavLinks
                     onClick={sidebarProps.onClose}
-                    className="flex-col gap-4"
+                    className="flex-col gap-8"
                 />
 
                 <button
