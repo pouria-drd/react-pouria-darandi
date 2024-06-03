@@ -7,7 +7,7 @@ interface ServiceCardProps {
 const ServiceCard = ({ title, caption, icon }: ServiceCardProps) => {
     return (
         <div
-            className="bg-pd-secondary-bg 
+            className="bg-pd-primary-bg 
             flex flex-col items-center justify-center gap-6
         
             hover:outline hover:outline-pd-primary
