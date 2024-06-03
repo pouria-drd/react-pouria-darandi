@@ -1,9 +1,9 @@
 import HomeHeader from "./HomeHeader";
-import SocialMedia from "../SocialMedia";
+import SocialMedia from "../../SocialMedia";
 import HomeDescription from "./HomeDescription";
-import Typewriter from "../typewriter/Typewriter";
-import SectionLayout from "../layouts/SectionLayout";
-import PouriaHexagonIcon from "../icons/PouriaHexagonIcon";
+import Typewriter from "../../typewriter/Typewriter";
+import SectionLayout from "../../layouts/SectionLayout";
+import PouriaHexagonIcon from "../../icons/PouriaHexagonIcon";
 
 const HomeSection = () => {
     const skills = [

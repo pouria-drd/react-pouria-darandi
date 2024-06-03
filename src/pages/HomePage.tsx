@@ -1,8 +1,7 @@
 import PageLayout from "../components/layouts/PageLayout";
-
-import HomeSection from "../components/home/HomeSection";
-import AboutSection from "../components/about/AboutSection";
-import ServiceSection from "../components/service/ServiceSection";
+import HomeSection from "../components/home-content/home/HomeSection";
+import AboutSection from "../components/home-content/about/AboutSection";
+import ServiceSection from "../components/home-content/service/ServiceSection";
 
 function HomePage() {
     return (

@@ -1,9 +1,9 @@
-import CubeIcon from "../icons/CubeIcon";
-import ServerIcon from "../icons/ServerIcon";
+import CubeIcon from "../../icons/CubeIcon";
+import ServerIcon from "../../icons/ServerIcon";
+import DesktopIcon from "../../icons/DesktopIcon";
 
 import ServiceCard from "./ServiceCard";
-import SectionLayout from "../layouts/SectionLayout";
-import DesktopIcon from "../icons/DesktopIcon";
+import SectionLayout from "../../layouts/SectionLayout";
 
 const ServiceSection = () => {
     return (

@@ -1,5 +1,5 @@
-import SectionLayout from "../layouts/SectionLayout";
-import PouriaBorderHexIcon from "../icons/PouriaBorderHexIcon";
+import SectionLayout from "../../layouts/SectionLayout";
+import PouriaBorderHexIcon from "../../icons/PouriaBorderHexIcon";
 
 const AboutSection = () => {
     return (
