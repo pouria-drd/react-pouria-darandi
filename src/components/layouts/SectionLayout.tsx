@@ -7,8 +7,8 @@ interface SectionLayoutProps {
 const SectionLayout = (sectionLayoutProps: SectionLayoutProps) => {
     return (
         <section
-            className={`odd:bg-pd-primary-bg even:bg-pd-secondary-bg 
-            app-px w-full ${sectionLayoutProps.className} py-28`}
+            className={`${sectionLayoutProps.className} odd:bg-pd-primary-bg even:bg-pd-secondary-bg 
+            app-px w-full py-28`}
             id={sectionLayoutProps.id}>
             {sectionLayoutProps.children}
         </section>
