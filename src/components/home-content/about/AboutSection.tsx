@@ -3,7 +3,7 @@ import PouriaBorderHexIcon from "../../icons/PouriaBorderHexIcon";
 
 const AboutSection = () => {
     return (
-        <SectionLayout className="py-28" id="about">
+        <SectionLayout id="about">
             <div className="flex flex-col-reverse md:flex-row items-center justify-center gap-20 md:gap-4 h-full">
                 <div className="flex items-center  justify-center w-full">
                     <PouriaBorderHexIcon />

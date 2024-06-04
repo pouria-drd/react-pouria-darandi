@@ -7,7 +7,7 @@ import SectionLayout from "../../layouts/SectionLayout";
 
 const ServiceSection = () => {
     return (
-        <SectionLayout className="flex flex-col gap-12 py-28" id="services">
+        <SectionLayout className="flex flex-col gap-12" id="services">
             <div className="text-pd-primary-text text-center w-full">
                 <h5 className="w-full">
                     My <span className="text-pd-primary">Services</span>

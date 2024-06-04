@@ -5,7 +5,7 @@ import "./skills.css";
 const SkillsSection = () => {
     return (
         <SectionLayout
-            className="flex flex-col md:flex-row items-center justify-between gap-16 py-28"
+            className="flex flex-col md:flex-row items-center justify-between gap-20 md:gap-0"
             id="skills">
             <div
                 className="flex flex-col items-center md:items-start justify-center gap-4
