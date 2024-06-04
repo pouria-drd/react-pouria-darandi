@@ -23,16 +23,28 @@ body {
     -webkit-backdrop-filter: blur(20px) saturate(150%);
 }
 
+.app-px {
+    @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-36;
+}
+
 .my-btn {
     @apply bg-pd-primary text-pd-primary-text 
-    cursor-pointer transition-all rounded-lg
+    cursor-pointer disabled:cursor-not-allowed transition-all rounded-lg
     shadow-2xl shadow-pd-primary/25
     hover:shadow-2xl hover:shadow-pd-primary/50
     px-4 py-2 min-w-20;
 }
 
-.app-px {
-    @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-36;
+.my-input {
+    @apply bg-pd-primary-bg 
+    outline-none focus:outline-pd-primary
+    text-pd-primary-text placeholder:text-pd-secondary-text 
+    rounded-lg px-4 py-3;
+}
+.my-textarea {
+    @apply bg-pd-primary-bg 
+    outline-none focus:outline-pd-primary
+    resize-none rounded-lg px-4 py-2 h-[12rem] md:h-[20rem];
 }
 
 .pouria-hex-icon {
@@ -64,16 +76,4 @@ body {
     100% {
         opacity: 1;
     }
-}
-
-.my-input {
-    @apply bg-pd-primary-bg 
-    outline-none focus:outline-pd-primary
-    text-pd-primary-text placeholder:text-pd-secondary-text 
-    rounded-lg px-4 py-3;
-}
-.my-textarea {
-    @apply bg-pd-primary-bg 
-    outline-none focus:outline-pd-primary
-    resize-none rounded-lg px-4 py-2 h-[12rem] md:h-[20rem];
 }

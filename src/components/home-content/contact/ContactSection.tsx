@@ -1,3 +1,4 @@
+import ContactForm from "./ContactForm";
 import SectionLayout from "../../layouts/SectionLayout";
 
 const ContactSection = () => {
@@ -12,38 +13,7 @@ const ContactSection = () => {
             </div>
 
             <div className="flex items-center justify-center w-full">
-                <form
-                    action=""
-                    className="flex flex-col gap-4 w-full sm:w-[400px] md:w-full md:max-w-3xl">
-                    <div className="flex flex-col md:flex-row items-center justify-center gap-4 w-full">
-                        <input
-                            className="my-input w-full"
-                            type="text"
-                            name="username"
-                            id="username"
-                            placeholder="Name"
-                            required={true}
-                        />
-                        <input
-                            className="my-input w-full"
-                            type="email"
-                            name="email"
-                            id="username"
-                            placeholder="Email"
-                            required={true}
-                        />
-                    </div>
-
-                    <div className="flex flex-col items-center justify-center gap-4 w-full">
-                        <textarea
-                            className="my-textarea w-full"
-                            name="content"
-                            required
-                            placeholder="message"></textarea>
-
-                        <button className="my-btn">Send Email</button>
-                    </div>
-                </form>
+                <ContactForm />
             </div>
         </SectionLayout>
     );
