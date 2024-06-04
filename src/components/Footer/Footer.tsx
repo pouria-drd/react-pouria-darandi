@@ -24,7 +24,7 @@ const Footer = () => {
 
             <SocialMedia className="justify-center" />
 
-            <span className="text-pd-secondary-text text-center text-sm">
+            <span className="text-pd-secondary-text text-center md:text-right text-sm">
                 &#169; Copyright Pouria Darandi. All rights reserved 2024
             </span>
         </footer>

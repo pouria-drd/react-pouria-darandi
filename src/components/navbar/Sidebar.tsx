@@ -1,5 +1,6 @@
 import NavLinks from "./NavLinks";
 import CloseIcon from "./icons/CloseIcon";
+import getAppVersion from "../../utils/getAppVersion";
 
 interface SidebarProps {
     isOpen: boolean;
@@ -18,25 +19,29 @@ const Sidebar = (sidebarProps: SidebarProps) => {
             onClick={sidebarProps.onClose}>
             <div
                 className={`bg-pd-secondary-bg/80 w-[75vw] max-w-[270px] h-full glass
-                flex flex-col items-start justify-start gap-10 p-4
+                flex flex-col items-start justify-between gap-10 p-4
                 transform transition-transform duration-200 ${
                     sidebarProps.isOpen ? "translate-x-0" : "-translate-x-full"
                 }`}
                 onClick={(e) => e.stopPropagation()}>
-                <h3 className="text-2xl">
-                    Pouria <span className="text-pd-primary">DRD</span>
-                </h3>
-
-                <NavLinks
-                    onClick={sidebarProps.onClose}
-                    className="flex-col gap-8"
-                />
-
                 <button
                     onClick={sidebarProps.onClose}
                     className="absolute top-4 right-3">
                     <CloseIcon />
                 </button>
+
+                <div className="w-full">
+                    <h3 className="text-2xl">
+                        Pouria <span className="text-pd-primary">DRD</span>
+                    </h3>
+
+                    <NavLinks
+                        onClick={sidebarProps.onClose}
+                        className="flex-col gap-8 mt-8"
+                    />
+                </div>
+
+                <p className="text-sm">Version {getAppVersion()}</p>
             </div>
         </div>
     );

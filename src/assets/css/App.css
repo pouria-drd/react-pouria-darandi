@@ -15,7 +15,7 @@ html {
 }
 
 body {
-    @apply bg-red-500 text-pd-primary-text;
+    @apply bg-pd-primary-bg text-pd-primary-text;
 }
 
 .glass {
