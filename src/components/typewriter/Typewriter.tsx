@@ -23,7 +23,7 @@ const Typewriter = (typewriterProps: TypewriterProps) => {
     }, []);
 
     return (
-        <div className="text-2xl w-full">
+        <div className="w-full">
             <span ref={el} />
         </div>
     );

@@ -7,9 +7,14 @@ import WhatsappIcon from "../components/icons/WhatsappIcon";
 import TelegramIcon from "../components/icons/TelegramIcon";
 import InstagramIcon from "../components/icons/InstagramIcon";
 
-const SocialMedia = () => {
+interface SocialMediaProps {
+    className?: string;
+}
+
+const SocialMedia = ({ className }: SocialMediaProps) => {
     return (
-        <div className="text-pd-secondary-text flex items-center gap-4">
+        <div
+            className={`text-pd-secondary-text flex items-center gap-4 ${className}`}>
             <Link
                 className="hover:text-pd-primary-text transition-all"
                 to="https://www.instagram.com/pouria.drd?igsh=OTdmZndkajBhbzF2&utm_source=qr/"

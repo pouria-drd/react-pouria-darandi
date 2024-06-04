@@ -22,7 +22,9 @@ const HomeSection = () => {
                     mt-20 md:mt-32 h-fit">
                     <HomeHeader />
 
-                    <Typewriter texts={skills} />
+                    <div className="text-2xl">
+                        <Typewriter texts={skills} />
+                    </div>
 
                     <HomeDescription />
 
