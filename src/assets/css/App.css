@@ -65,3 +65,15 @@ body {
         opacity: 1;
     }
 }
+
+.my-input {
+    @apply bg-pd-primary-bg 
+    outline-none focus:outline-pd-primary
+    text-pd-primary-text placeholder:text-pd-secondary-text 
+    rounded-lg px-4 py-3;
+}
+.my-textarea {
+    @apply bg-pd-primary-bg 
+    outline-none focus:outline-pd-primary
+    resize-none rounded-lg px-4 py-2 h-[12rem] md:h-[20rem];
+}
