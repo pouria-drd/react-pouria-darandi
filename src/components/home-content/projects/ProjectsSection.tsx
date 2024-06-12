@@ -47,7 +47,7 @@ const ProjectsSection = () => {
                     title="Rasacrowd"
                     link="https://rasacrowd.ir/"
                     caption="People who have launched an idea or intend to launch it.
-                         Companies or startups that intend to develop their products or services."
+                         Companies or startups that intend to develope their products or services."
                 />
             </div>
         </SectionLayout>
