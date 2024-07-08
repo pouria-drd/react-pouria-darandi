@@ -14,44 +14,44 @@ interface SocialMediaProps {
 const SocialMedia = ({ className }: SocialMediaProps) => {
     return (
         <div
-            className={`text-pd-secondary-text flex items-center gap-4 ${className}`}>
+            className={`text-drd-text-primary flex items-center gap-4 ${className}`}>
             <Link
-                className="hover:text-pd-primary-text transition-all"
+                className="hover:text-drd-primary transition-all"
                 to="https://www.instagram.com/pouria.drd?igsh=OTdmZndkajBhbzF2&utm_source=qr/"
                 target="_blank">
                 <InstagramIcon />
             </Link>
 
             <Link
-                className="hover:text-pd-primary-text transition-all"
+                className="hover:text-drd-primary transition-all"
                 to="https://twitter.com/pour1a_d/"
                 target="_blank">
                 <TwitterIcon />
             </Link>
 
             <Link
-                className="hover:text-pd-primary-text transition-all"
+                className="hover:text-drd-primary transition-all"
                 to="https://t.me/pouria_drd/"
                 target="_blank">
                 <TelegramIcon />
             </Link>
 
             <Link
-                className="hover:text-pd-primary-text transition-all"
+                className="hover:text-drd-primary transition-all"
                 to="https://wa.me/+989226989288/"
                 target="_blank">
                 <WhatsappIcon />
             </Link>
 
             <Link
-                className="hover:text-pd-primary-text transition-all"
+                className="hover:text-drd-primary transition-all"
                 to="https://discordapp.com/users/pour1a/"
                 target="_blank">
                 <DiscordIcon />
             </Link>
 
             <Link
-                className="hover:text-pd-primary-text transition-all"
+                className="hover:text-drd-primary transition-all"
                 to="https://github.com/pouria-drd/"
                 target="_blank">
                 <GithubIcon />

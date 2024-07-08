@@ -1,21 +1,24 @@
-::-webkit-scrollbar {
-    @apply bg-pd-scroll-bg w-2 h-1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply text-drd-text-primary;
 }
 
-::-webkit-scrollbar-thumb:horizontal {
-    @apply bg-pd-scroll rounded-none;
+p {
+    @apply text-drd-text-secondary;
 }
 
-::-webkit-scrollbar-thumb:vertical {
-    @apply bg-pd-scroll rounded-none;
+* {
+    @apply font-vazir;
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    @apply bg-pd-primary-bg text-pd-primary-text;
+.a-btn {
+    @apply bg-drd-primary text-drd-bg-primary 
+    text-sm sm:text-base transition-all
+    rounded-lg px-4 py-2 w-fit;
 }
 
 .glass {
@@ -24,32 +27,12 @@ body {
 }
 
 .app-px {
-    @apply px-4 sm:px-8 md:px-12 lg:px-16 xl:px-32 2xl:px-36;
-}
-
-.my-btn {
-    @apply bg-pd-primary text-pd-primary-text 
-    cursor-pointer disabled:cursor-not-allowed transition-all rounded-lg
-    shadow-2xl shadow-pd-primary/25
-    hover:shadow-2xl hover:shadow-pd-primary/50
-    px-4 py-2 min-w-20;
-}
-
-.my-input {
-    @apply bg-pd-primary-bg 
-    outline-none focus:outline-pd-primary
-    text-pd-primary-text placeholder:text-pd-secondary-text 
-    rounded-lg px-4 py-3;
-}
-.my-textarea {
-    @apply bg-pd-primary-bg 
-    outline-none focus:outline-pd-primary
-    resize-none rounded-lg px-4 py-2 h-[12rem] md:h-[20rem];
+    @apply px-4 sm:px-8 md:px-12 lg:px-20 xl:px-28 2xl:px-60;
 }
 
 .pouria-hex-icon {
     animation: floatImage 4s ease-in-out infinite;
-    @apply text-pd-primary drop-shadow-pdIcon hover:drop-shadow-pdIconHover transition-all;
+    @apply text-drd-primary drop-shadow-pdIcon hover:drop-shadow-pdIconHover transition-all;
 }
 
 @keyframes floatImage {
@@ -64,16 +47,122 @@ body {
     }
 }
 
+/* ---------------------------------------------------------------------- */
+/* Fade in animation */
 .fade-in {
-    opacity: 0;
-    animation: fadeIn 2s ease-in-out 1 forwards;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
-
-@keyframes fadeIn {
+@keyframes fadeInAnimation {
     0% {
         opacity: 0;
     }
     100% {
         opacity: 1;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+/* Bounce animation */
+
+.bounce-top {
+    animation: bounceTomAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes bounceTomAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateY(-45px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateY(-24px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateY(-12px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateY(-6px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateY(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87% {
+        animation-timing-function: ease-out;
+        transform: translateY(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.bounce-left {
+    animation: bounceLeftAnim 2s ease 0s 1 normal forwards;
+}
+
+@keyframes bounceLeftAnim {
+    0% {
+        animation-timing-function: ease-in;
+        opacity: 1;
+        transform: translateX(-60px);
+    }
+
+    24% {
+        opacity: 1;
+    }
+
+    40% {
+        animation-timing-function: ease-in;
+        transform: translateX(-26px);
+    }
+
+    65% {
+        animation-timing-function: ease-in;
+        transform: translateX(-13px);
+    }
+
+    82% {
+        animation-timing-function: ease-in;
+        transform: translateX(-6.5px);
+    }
+
+    93% {
+        animation-timing-function: ease-in;
+        transform: translateX(-4px);
+    }
+
+    25%,
+    55%,
+    75%,
+    87%,
+    98% {
+        animation-timing-function: ease-out;
+        transform: translateX(0px);
+    }
+
+    100% {
+        animation-timing-function: ease-out;
+        opacity: 1;
+        transform: translateX(0px);
     }
 }

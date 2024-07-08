@@ -6,18 +6,19 @@ const FloatLink = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScroll(window.scrollY >= 400);
+            setScroll(window.scrollY >= 300);
         });
     }, []);
 
-    if (!scroll) return null;
-
     return (
         <a
-            className="bg-pd-scroll-bg text-pd-primary fixed right-4 bottom-4
-            hover:scale-105
-            rounded-lg p-2 w-fit"
-            href="/#home">
+            className={`${
+                scroll ? "opacity-100" : "opacity-0"
+            } transition-opacity duration-500
+            bg-zinc-100 text-drd-primary fixed right-4 bottom-4 z-10
+            hover:scale-105 
+            rounded-lg p-2 w-fit`}
+            href="/#intro">
             <ChevronUpIcon />
         </a>
     );

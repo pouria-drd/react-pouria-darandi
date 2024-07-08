@@ -1,46 +1,21 @@
+import ALink from "./ALink";
+// import LanguageIcon from "../icons/LanguageIcon";
+
 interface NavLinksProps {
-    className?: string;
     onClick?: () => void;
 }
 
-const NavLinks = (navLinksProps: NavLinksProps) => {
-    const handleOnClick = () => {
-        navLinksProps.onClick?.();
-    };
-
+const NavLinks = ({ onClick }: NavLinksProps) => {
     return (
-        <ul className={`flex ${navLinksProps.className}`}>
-            <a
-                onClick={handleOnClick}
-                className="hover:text-pd-primary-text"
-                href="/#home">
-                Home
-            </a>
-            <a
-                onClick={handleOnClick}
-                className="hover:text-pd-primary-text"
-                href="/#about">
-                About
-            </a>
-            <a
-                onClick={handleOnClick}
-                className="hover:text-pd-primary-text"
-                href="/#services">
-                Services
-            </a>
-            <a
-                onClick={handleOnClick}
-                className="hover:text-pd-primary-text"
-                href="/#projects">
-                Projects
-            </a>
-            <a
-                onClick={handleOnClick}
-                className="hover:text-pd-primary-text"
-                href="/#contact">
-                Contact
-            </a>
-        </ul>
+        <div className="hidden sm:flex items-center justify-center gap-6">
+            {/* <button className="nav-link flex items-center gap-1">
+                <LanguageIcon />
+            </button> */}
+            <ALink href="/#intro" onClick={onClick} text="تماس" />
+            <ALink href="/#projects" onClick={onClick} text="پروژه‌ها" />
+            <ALink href="/#services" onClick={onClick} text="خدمات" />
+            <ALink href="/#about" onClick={onClick} text="درباره" />
+        </div>
     );
 };
 

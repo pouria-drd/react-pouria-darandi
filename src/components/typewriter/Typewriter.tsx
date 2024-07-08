@@ -14,6 +14,7 @@ const Typewriter = (typewriterProps: TypewriterProps) => {
             strings: typewriterProps.texts,
             typeSpeed: 75,
             loop: true,
+            cursorChar: "",
         });
 
         return () => {
@@ -22,11 +23,7 @@ const Typewriter = (typewriterProps: TypewriterProps) => {
         };
     }, []);
 
-    return (
-        <div className="w-full">
-            <span ref={el} />
-        </div>
-    );
+    return <span ref={el} />;
 };
 
 export default Typewriter;

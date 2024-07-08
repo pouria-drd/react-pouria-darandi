@@ -1,0 +1,34 @@
+.drd-navbar {
+    @apply bg-drd-bg-primary/90 sticky
+    transition-all duration-300
+    flex justify-between items-center
+    rounded-b-2xl py-4 z-10 w-full;
+}
+
+.drd-sidebar {
+    @apply bg-drd-bg-primary/90 w-[75vw] max-w-[270px] h-full 
+    flex flex-col items-start justify-start gap-12 p-4
+    transform transition-transform duration-200;
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    @apply text-drd-text-secondary hover:text-drd-text-primary w-fit transition-all;
+}
+
+.nav-link::after {
+    left: 0;
+    width: 0;
+    bottom: -2px;
+    height: 1.5px;
+    content: "";
+    display: block;
+    position: absolute;
+    transition: width 0.15s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    @apply bg-drd-primary;
+}

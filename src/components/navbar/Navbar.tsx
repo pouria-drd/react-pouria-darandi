@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import "./navbar.css";
 
+import { useEffect, useState } from "react";
+
+import Logo from "../Logo";
 import Sidebar from "./Sidebar";
 import NavLinks from "./NavLinks";
-import MenuIcon from "./icons/MenuIcon";
+import BurgerButton from "./BurgerButton";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
@@ -11,34 +13,24 @@ const Navbar = () => {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            setScroll(window.scrollY >= 75);
+            setScroll(window.scrollY >= 25);
         });
     }, []);
-    // ${scroll ? "fixed h-[12svh]" : "h-[10svh]"}
 
     return (
         <>
-            <header
-                className={`bg-pd-primary-bg w-full h-[10svh] ${
-                    scroll && "fixed glass bg-opacity-80 z-40 top-0 left-0 "
-                } app-px`}>
-                <nav className="flex items-center justify-between h-full">
-                    <Link to="/" className="text-2xl">
-                        Pouria <span className="text-pd-primary">DRD</span>
-                    </Link>
+            <nav
+                className={`drd-navbar glass app-px ${
+                    scroll ? "top-0" : "top-4"
+                }`}>
+                <Logo />
 
-                    <div className="hidden md:block text-pd-secondary-text">
-                        <NavLinks className="items-center justify-center gap-10" />
-                    </div>
+                <NavLinks />
 
-                    <button
-                        className="md:hidden"
-                        onClick={() => setIsOpen(true)}>
-                        {!isOpen && <MenuIcon />}
-                    </button>
-                </nav>
-            </header>
-            <Sidebar isOpen={isOpen} onClose={() => setIsOpen(false)} />
+                <BurgerButton onClick={() => setIsOpen(true)} />
+            </nav>
+
+            <Sidebar isOpen={isOpen} onClick={() => setIsOpen(false)} />
         </>
     );
 };

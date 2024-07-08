@@ -1,0 +1,4 @@
+.drd-backdrop {
+    @apply bg-black/40 fixed inset-0
+    z-50 md:hidden transition-opacity duration-200;
+}
